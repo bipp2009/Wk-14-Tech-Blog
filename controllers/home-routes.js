@@ -11,5 +11,10 @@ router.get('/login', async (req, res) =>{
     res.render('login')
 })
 
+//Sign Up endpoint
+router.get('/signup', async (req, res) =>{
+    res.render('signup')
+})
+
 
 module.exports = router;
