@@ -9,4 +9,12 @@ router.get('/', withAuth, async (req, res) => {
    })
 })
 
+router.get('/newblog', withAuth, async (req, res) => {
+    res.render('newblog', {
+        layout: 'dashboard',
+        
+    })
+ })
+ 
+
 module.exports = router; 
